@@ -1,5 +1,13 @@
 [
     {
+      "title": "使用 standard-version 实现自动化版本管理和 CHANGELOG 生成",
+      "url": "https://hugopaper.github.io/zh/post/standard-version-gitblit-guide/",
+      "date": "2025-11-15",
+      "description": "详细教程：如何在 Gitblit 等 Git 服务器上使用 standard-version 实现自动化版本管理、CHANGELOG 生成和语义化版本控制，适用于任何 Git 平台",
+      "tags": ["Git","版本管理","自动化","DevOps","Gitblit","standard-version","CHANGELOG","语义化版本"],
+      "categories": ["开发工具","最佳实践"]
+    },
+    {
       "title": "Hugo Paper 完整 SEO 优化指南：在 Google 上获得更高排名",
       "url": "https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/",
       "date": "2024-11-15",
