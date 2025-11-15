@@ -1,0 +1,6 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on HugoPaper</title><link>https://hugopaper.github.io/zh/tags/tutorial/</link><description>Recent content in Tutorial on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/tags/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Paper 中的动态 OG 图片生成</title><link>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</guid><description>&lt;p&gt;Hugo Paper 引入了强大的动态 OG 图片生成功能，使用 Unsplash API 自动为你的博客文章创建美观、相关的社交媒体预览图片。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Open Graph (OG) 图片对于社交媒体分享至关重要，当你的博客文章在 Twitter、Facebook、LinkedIn 等平台上分享时，它们提供视觉预览。这些预览图片可以将点击率提高 30-50%，并显著改善互动效果。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然 Twitter 在技术上使用的是&amp;quot;Twitter Cards&amp;quot;而不是 Open Graph，但为了简单起见，我们将使用术语&amp;quot;OG 图片&amp;quot;来指代所有社交媒体预览图片。&lt;/p&gt;</description></item></channel></rss>

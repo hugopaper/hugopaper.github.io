@@ -1,0 +1,48 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unsplash on HugoPaper</title><link>https://hugopaper.github.io/tags/unsplash/</link><description>Recent content in Unsplash on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 15 Nov 2024 11:00:00 +0800</lastBuildDate><atom:link href="https://hugopaper.github.io/tags/unsplash/index.xml" rel="self" type="application/rss+xml"/><item><title>Dynamic OG Image Generation in Hugo Paper: Boost Social Media Engagement</title><link>https://hugopaper.github.io/post/dynamic-og-images-hugo-paper-social-media/</link><pubDate>Fri, 15 Nov 2024 11:00:00 +0800</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/post/dynamic-og-images-hugo-paper-social-media/</guid><description>&lt;p&gt;Open Graph (OG) images are crucial for social media sharing. Hugo Paper&amp;rsquo;s dynamic OG image generation automatically creates beautiful, relevant preview images using the Unsplash API—no manual work required.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id="what-are-og-images"&gt;What Are OG Images?&lt;/h2&gt;
+&lt;p&gt;Open Graph images are the preview images that appear when you share a link on social media platforms like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Facebook&lt;/strong&gt; - Shows in news feed and timeline&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt; - Displays as Twitter Card&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt; - Appears in professional posts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Discord/Slack&lt;/strong&gt; - Shows in message previews&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WhatsApp&lt;/strong&gt; - Displays in link previews&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="why-og-images-matter"&gt;Why OG Images Matter&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Impact on engagement:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📈 &lt;strong&gt;30-50% higher click-through rates&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;👁️ &lt;strong&gt;3x more visual attention&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;2x more shares&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;strong&gt;Better conversation starters&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Without OG image:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[Generic site icon]
+Your Amazing Blog Post
+yourblog.com
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;With OG image:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;[Beautiful relevant image 1200x630px]
+Your Amazing Blog Post
+A compelling description that makes people want to click
+yourblog.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="the-traditional-problem"&gt;The Traditional Problem&lt;/h2&gt;
+&lt;h3 id="manual-approach"&gt;Manual Approach&lt;/h3&gt;
+&lt;p&gt;Most Hugo themes require you to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Create images manually&lt;/strong&gt; - Design in Photoshop/Canva&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save and optimize&lt;/strong&gt; - Export at correct size&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload to static folder&lt;/strong&gt; - Manage file organization&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reference in frontmatter&lt;/strong&gt; - Add path to each post&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Time cost:&lt;/strong&gt; 10-15 minutes per post&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problems:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;❌ Time-consuming&lt;/li&gt;
+&lt;li&gt;❌ Requires design skills&lt;/li&gt;
+&lt;li&gt;❌ Inconsistent quality&lt;/li&gt;
+&lt;li&gt;❌ Storage overhead&lt;/li&gt;
+&lt;li&gt;❌ Easy to forget&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="static-fallback-approach"&gt;Static Fallback Approach&lt;/h3&gt;
+&lt;p&gt;Using one default image for all posts:&lt;/p&gt;</description></item></channel></rss>

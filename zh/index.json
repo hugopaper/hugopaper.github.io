@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Hugo Paper 完整 SEO 优化指南：在 Google 上获得更高排名",
+      "url": "https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/",
+      "date": "2024-11-15",
+      "description": "掌握 Hugo Paper 的 SEO 优化，包括 Schema.org 结构化数据、meta 标签和最佳实践。完整指南助你提升 Google 排名和自然流量。",
+      "tags": ["hugo","seo","google","schema-org","优化","排名"],
+      "categories": ["教程","SEO"]
+    },
+    {
+      "title": "Hugo Paper 动态 OG 图片生成：提升社交媒体互动率",
+      "url": "https://hugopaper.github.io/zh/post/dynamic-og-images-hugo-paper-social-media/",
+      "date": "2024-11-15",
+      "description": "学习如何使用 Unsplash API 为你的 Hugo 博客自动生成精美的 Open Graph 图片。通过动态 OG 图片将社交媒体互动率提升 30-50%。",
+      "tags": ["hugo","seo","社交媒体","og图片","unsplash","自动化"],
+      "categories": ["教程","SEO"]
+    },
+    {
+      "title": "如何使用 Hugo Paper 的 New-Post 脚本创建 SEO 优化的博客文章",
+      "url": "https://hugopaper.github.io/zh/post/create-seo-optimized-posts-hugo-paper-new-post-script/",
+      "date": "2024-11-15",
+      "description": "学习如何使用 Hugo Paper 的交互式 new-post 脚本快速创建 SEO 优化的博客文章。包含完整示例和内容创作最佳实践的指南。",
+      "tags": ["hugo","博客","seo","自动化","效率工具"],
+      "categories": ["教程","文档"]
+    },
+    {
+      "title": "Hugo Paper 中的动态 OG 图片生成",
+      "url": "https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/",
+      "date": "2024-11-15",
+      "description": "了解 Hugo Paper 如何使用 Unsplash API 自动为博客文章生成 Open Graph 图片，通过动态、高质量的视觉效果增强社交媒体分享。",
+      "tags": ["docs","tutorial"],
+      "categories": []
+    },
+    {
+      "title": "Hugo Paper 入门指南",
+      "url": "https://hugopaper.github.io/zh/post/getting-started/",
+      "date": "2024-11-11",
+      "description": "了解如何为你的博客设置和自定义 Hugo Paper 主题",
+      "tags": ["hugo","setup","guide"],
+      "categories": ["Tutorial"]
+    },
+    {
+      "title": "Tailwind CSS v4 最佳实践",
+      "url": "https://hugopaper.github.io/zh/post/tailwind-v4-best-practices/",
+      "date": "2024-11-10",
+      "description": "探索在 Hugo Paper 中使用 Tailwind CSS v4 的最佳实践",
+      "tags": ["tailwind","css","tips"],
+      "categories": ["Development"]
+    },
+    {
+      "title": "如何将 Giscus 评论集成到 AstroPaper",
+      "url": "https://hugopaper.github.io/zh/post/how-to-integrate-giscus-comments/",
+      "date": "2024-07-25",
+      "description": "在托管于 GitHub Pages 的静态博客上使用 Giscus 实现评论功能。",
+      "tags": ["astro","blog","docs"],
+      "categories": []
+    },
+    {
+      "title": "预定义配色方案",
+      "url": "https://hugopaper.github.io/zh/post/predefined-color-schemes/",
+      "date": "2022-09-26",
+      "description": "为 AstroPaper 博客主题精心设计的一些预定义配色方案。",
+      "tags": ["color-schemes"],
+      "categories": []
+    },
+    {
+      "title": "在 HugoPaper 主题中添加新文章",
+      "url": "https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/",
+      "date": "2022-09-23",
+      "description": "使用 HugoPaper 主题创建或添加新文章的一些规则和建议。",
+      "tags": ["docs"],
+      "categories": ["Tutorial"]
+    }]

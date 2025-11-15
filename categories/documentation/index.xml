@@ -1,0 +1,36 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documentation on HugoPaper</title><link>https://hugopaper.github.io/categories/documentation/</link><description>Recent content in Documentation on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 15 Nov 2024 10:00:00 +0800</lastBuildDate><atom:link href="https://hugopaper.github.io/categories/documentation/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Create SEO-Optimized Blog Posts with Hugo Paper's New-Post Script</title><link>https://hugopaper.github.io/post/create-seo-optimized-posts-hugo-paper-new-post-script/</link><pubDate>Fri, 15 Nov 2024 10:00:00 +0800</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/post/create-seo-optimized-posts-hugo-paper-new-post-script/</guid><description>&lt;p&gt;Creating blog posts with proper SEO optimization can be time-consuming. Hugo Paper&amp;rsquo;s &lt;code&gt;new-post&lt;/code&gt; script automates this process, helping you create well-structured, SEO-friendly posts in seconds.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id="why-use-the-new-post-script"&gt;Why Use the New-Post Script?&lt;/h2&gt;
+&lt;p&gt;Traditional blog post creation requires manually setting up frontmatter with numerous SEO fields. The &lt;code&gt;new-post&lt;/code&gt; script streamlines this by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;Interactive prompts&lt;/strong&gt; - Guides you through all SEO fields&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Automatic slug generation&lt;/strong&gt; - Creates SEO-friendly URLs&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Timestamp management&lt;/strong&gt; - Adds proper date/time formats&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Multilingual support&lt;/strong&gt; - Creates posts in English or Chinese&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;SEO best practices&lt;/strong&gt; - Ensures all required fields are present&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;Consistent structure&lt;/strong&gt; - Maintains uniform post format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before using the script, ensure you have:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Check Node.js version (18.0+)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;node --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Check pnpm version (8.0+)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Install dependencies if needed&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="two-ways-to-create-posts"&gt;Two Ways to Create Posts&lt;/h2&gt;
+&lt;p&gt;Hugo Paper provides two scripts for different workflows:&lt;/p&gt;
+&lt;h3 id="1-interactive-mode-recommended"&gt;1. Interactive Mode (Recommended)&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;new-post&lt;/code&gt; script provides an interactive experience with prompts for all fields:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Basic usage&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm new-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# With title&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm new-post &lt;span class="s2"&gt;&amp;#34;Getting Started with Hugo&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# With title and language&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm new-post &lt;span class="s2"&gt;&amp;#34;Hugo Getting Started Guide&amp;#34;&lt;/span&gt; en
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-quick-mode"&gt;2. Quick Mode&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;quick-post&lt;/code&gt; script uses sensible defaults for rapid post creation:&lt;/p&gt;</description></item></channel></rss>

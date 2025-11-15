@@ -1,0 +1,36 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on HugoPaper</title><link>https://hugopaper.github.io/zh/tags/docs/</link><description>Recent content in Docs on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/tags/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Paper 中的动态 OG 图片生成</title><link>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</guid><description>&lt;p&gt;Hugo Paper 引入了强大的动态 OG 图片生成功能，使用 Unsplash API 自动为你的博客文章创建美观、相关的社交媒体预览图片。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Open Graph (OG) 图片对于社交媒体分享至关重要，当你的博客文章在 Twitter、Facebook、LinkedIn 等平台上分享时，它们提供视觉预览。这些预览图片可以将点击率提高 30-50%，并显著改善互动效果。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然 Twitter 在技术上使用的是&amp;quot;Twitter Cards&amp;quot;而不是 Open Graph，但为了简单起见，我们将使用术语&amp;quot;OG 图片&amp;quot;来指代所有社交媒体预览图片。&lt;/p&gt;</description></item><item><title>如何将 Giscus 评论集成到 AstroPaper</title><link>https://hugopaper.github.io/zh/post/how-to-integrate-giscus-comments/</link><pubDate>Thu, 25 Jul 2024 11:11:53 +0000</pubDate><author>FjellOverflow</author><guid>https://hugopaper.github.io/zh/post/how-to-integrate-giscus-comments/</guid><description>&lt;p&gt;在 &lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"&gt;GitHub Pages&lt;/a&gt; 等平台上托管轻量级静态博客有很多优势，但也失去了一些交互性。幸运的是，&lt;a href="https://giscus.app/"&gt;Giscus&lt;/a&gt; 的存在提供了一种在静态网站上嵌入用户评论的方法。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="giscus-的工作原理"&gt;&lt;em&gt;Giscus&lt;/em&gt; 的工作原理&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/giscus/giscus?tab=readme-ov-file#how-it-works"&gt;Giscus 使用 GitHub API&lt;/a&gt; 来读取和存储 &lt;em&gt;GitHub&lt;/em&gt; 用户在与仓库关联的 &lt;code&gt;Discussions&lt;/code&gt; 中发表的评论。&lt;/p&gt;
+&lt;p&gt;在你的网站上嵌入 &lt;em&gt;Giscus&lt;/em&gt; 客户端脚本包，使用正确的仓库 URL 进行配置，用户就可以查看和撰写评论（当登录到 &lt;em&gt;GitHub&lt;/em&gt; 时）。&lt;/p&gt;
+&lt;p&gt;这种方法是无服务器的，因为评论存储在 &lt;em&gt;GitHub&lt;/em&gt; 上，并在客户端动态加载，因此非常适合像 &lt;em&gt;AstroPaper&lt;/em&gt; 这样的静态博客。&lt;/p&gt;
+&lt;h2 id="设置-giscus"&gt;设置 &lt;em&gt;Giscus&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Giscus&lt;/em&gt; 可以在 &lt;a href="https://giscus.app/"&gt;giscus.app&lt;/a&gt; 上轻松设置，但我还是会简要概述这个过程。&lt;/p&gt;</description></item><item><title>在 HugoPaper 主题中添加新文章</title><link>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</link><pubDate>Fri, 23 Sep 2022 15:22:00 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</guid><description>&lt;p&gt;以下是在 HugoPaper 博客主题中创建新文章的一些规则/建议、技巧和窍门。&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/159618/still-life-school-retro-ink-159618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+alt="经典木质书桌与书写材料、复古时钟和皮包"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+图片来自 &lt;a href="https://www.pexels.com/photo/brown-wooden-desk-159618/"&gt;Pixabay&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="创建博客文章"&gt;创建博客文章&lt;/h2&gt;
+&lt;p&gt;要编写新的博客文章，请在 &lt;code&gt;content/post/&lt;/code&gt; 目录中创建一个 markdown 文件。&lt;/p&gt;
+&lt;p&gt;你可以将博客文章组织到子目录中，这样更容易管理内容。&lt;/p&gt;
+&lt;p&gt;例如，如果你想将文章分组到 &lt;code&gt;2025&lt;/code&gt; 下，可以将它们放在 &lt;code&gt;content/post/2025/&lt;/code&gt; 中。Hugo 会自动生成相应的 URL。&lt;/p&gt;
+&lt;div class="highlight" filename="示例"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 示例：博客文章结构和 URL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/very-first-post.md -&amp;gt; mysite.com/post/very-first-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/2025/example-post.md -&amp;gt; mysite.com/post/2025/example-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/docs/how-to.md -&amp;gt; mysite.com/post/docs/how-to
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;💡 提示：你可以在 frontmatter 中使用 &lt;code&gt;slug&lt;/code&gt; 参数覆盖博客文章的 slug。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="front-matter"&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;Front Matter 是存储博客文章（文章）重要信息的主要位置。Front Matter 位于文章顶部，以 YAML 格式编写。在 &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo 文档&lt;/a&gt;中了解更多关于 frontmatter 及其用法的信息。&lt;/p&gt;</description></item></channel></rss>

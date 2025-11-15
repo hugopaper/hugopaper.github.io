@@ -1,0 +1,394 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on HugoPaper</title><link>https://hugopaper.github.io/tags/docs/</link><description>Recent content in Docs on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugopaper.github.io/tags/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Dynamic OG Image Generation in Hugo Paper</title><link>https://hugopaper.github.io/post/dynamic-og-image-generation-in-hugo-paper/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/post/dynamic-og-image-generation-in-hugo-paper/</guid><description>&lt;p&gt;Hugo Paper introduces a powerful dynamic OG image generation feature that automatically creates beautiful, relevant social media preview images for your blog posts using the Unsplash API.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Open Graph (OG) images are crucial for social media sharing, providing visual previews when your blog posts are shared on platforms like Twitter, Facebook, LinkedIn, and others. These preview images can increase click-through rates by 30-50% and significantly improve engagement.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While Twitter technically uses &amp;ldquo;Twitter Cards&amp;rdquo; rather than Open Graph, we&amp;rsquo;ll use the term &amp;ldquo;OG image&amp;rdquo; to refer to all social media preview images for simplicity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="the-traditional-approach"&gt;The Traditional Approach&lt;/h2&gt;
+&lt;p&gt;Traditionally, Hugo themes handle OG images in one of two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Manual specification&lt;/strong&gt;: Authors specify an image path in the frontmatter (&lt;code&gt;cover&lt;/code&gt; or &lt;code&gt;image&lt;/code&gt; field)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Static fallback&lt;/strong&gt;: A single default image is used for all posts without a specified image&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;The problem&lt;/strong&gt;: The static fallback approach means every blog post without a custom image uses the same generic preview, regardless of the post&amp;rsquo;s content. This results in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Poor visual differentiation between posts&lt;/li&gt;
+&lt;li&gt;Lower engagement rates&lt;/li&gt;
+&lt;li&gt;Time-consuming manual image creation for each post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hugo-papers-dynamic-solution"&gt;Hugo Paper&amp;rsquo;s Dynamic Solution&lt;/h2&gt;
+&lt;p&gt;Hugo Paper takes a different, more efficient approach using the &lt;strong&gt;Unsplash Source API&lt;/strong&gt; to dynamically generate relevant OG images based on your post&amp;rsquo;s content.&lt;/p&gt;</description></item><item><title>How to add LaTeX Equations in Astro blog posts</title><link>https://hugopaper.github.io/post/how-to-add-latex-equations-in-blog-posts/</link><pubDate>Sun, 08 Sep 2024 20:58:52 +0000</pubDate><author>Alberto Perdomo</author><guid>https://hugopaper.github.io/post/how-to-add-latex-equations-in-blog-posts/</guid><description>&lt;p&gt;This document demonstrates how to use LaTeX equations in your Markdown files for AstroPaper. LaTeX is a powerful typesetting system often used for mathematical and scientific documents.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/22690748/pexels-photo-22690748/free-photo-of-close-up-of-complicated-equations-written-on-a-blackboard.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+alt="Free Close-up of complex equations on a chalkboard, showcasing chemistry and math symbols. Stock Photo"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+Photo by &lt;a href="https://www.pexels.com/photo/close-up-of-complicated-equations-written-on-a-blackboard-22690748/"&gt;Vitaly Gariev&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="instructions"&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;In this section, you will find instructions on how to add support for LaTeX in your Markdown files for AstroPaper.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install the necessary remark and rehype plugins by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;pnpm install rehype-katex remark-math katex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the Astro configuration to use the these plugins:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-ts" data-lang="ts"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;remarkMath&lt;/span&gt; &lt;span class="kr"&gt;from&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;remark-math&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;rehypeKatex&lt;/span&gt; &lt;span class="kr"&gt;from&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;rehype-katex&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;export&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="nx"&gt;defineConfig&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;// ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;markdown&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;remarkPlugins&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;remarkMath&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// [!code ++]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;remarkToc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;remarkCollapse&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Table of contents&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;}],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;rehypePlugins&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;rehypeKatex&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="c1"&gt;// [!code ++]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;shikiConfig&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;// For more themes, visit https://shiki.style/themes
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;themes&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="nx"&gt;light&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;min-light&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;dark&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;night-owl&amp;#34;&lt;/span&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;wrap&lt;/span&gt;: &lt;span class="kt"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;// ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Import KaTeX CSS in the main layout file&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-astro" data-lang="astro"&gt;---
+import { SITE } from &amp;#34;@config&amp;#34;;
+// astro code
+---
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;!-- others... --&amp;gt;
+&amp;lt;script is:inline src=&amp;#34;/toggle-theme.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!-- [!code highlight:4] --&amp;gt;
+&amp;lt;link
+rel=&amp;#34;stylesheet&amp;#34;
+href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css&amp;#34;
+/&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;slot /&amp;gt;
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As the last step, add a text-color for &lt;code&gt;katex&lt;/code&gt; in &lt;code&gt;typography.css&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;plugin&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;@tailwindcss/typography&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;layer&lt;/span&gt; &lt;span class="nt"&gt;base&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;/* other classes */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;/* Katex text color */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;/* [!code highlight:3] */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;prose&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;katex-display&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;@apply&lt;/span&gt; &lt;span class="err"&gt;text-foreground&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;/* ===== Code Blocks &amp;amp; Syntax Highlighting ===== */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;/* other classes */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And &lt;em&gt;voilà&lt;/em&gt;, this setup allows you to write LaTeX equations in your Markdown files, which will be rendered properly when the site is built. Once you do it, the rest of the document will appear rendered correctly.&lt;/p&gt;</description></item><item><title>How to integrate Giscus comments into AstroPaper</title><link>https://hugopaper.github.io/post/how-to-integrate-giscus-comments/</link><pubDate>Thu, 25 Jul 2024 11:11:53 +0000</pubDate><author>FjellOverflow</author><guid>https://hugopaper.github.io/post/how-to-integrate-giscus-comments/</guid><description>&lt;p&gt;Hosting a thin static blog on a platform like &lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"&gt;GitHub Pages&lt;/a&gt; has numerous advantages, but also takes away some interactivity. Fortunately, &lt;a href="https://giscus.app/"&gt;Giscus&lt;/a&gt; exists and offers a way to embed user comments on static sites.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="how-giscus-works"&gt;How &lt;em&gt;Giscus&lt;/em&gt; works&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/giscus/giscus?tab=readme-ov-file#how-it-works"&gt;Giscus uses the GitHub API&lt;/a&gt; to read and store comments made by &lt;em&gt;GitHub&lt;/em&gt; users in the &lt;code&gt;Discussions&lt;/code&gt; associated with a repository.&lt;/p&gt;
+&lt;p&gt;Embed the &lt;em&gt;Giscus&lt;/em&gt; client-side script bundle on your site, configure it with the correct repository URL, and users can view and write comments (when logged into &lt;em&gt;GitHub&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;The approach is serverless, as the comments are stored on &lt;em&gt;GitHub&lt;/em&gt; and dynamically loaded from there on client side, hence perfect for a static blog, like &lt;em&gt;AstroPaper&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="setting-up-giscus"&gt;Setting up &lt;em&gt;Giscus&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Giscus&lt;/em&gt; can be set up easily on &lt;a href="https://giscus.app/"&gt;giscus.app&lt;/a&gt;, but I will outline the process shortly still.&lt;/p&gt;
+&lt;h3 id="prerequisites"&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Prerequisites to get &lt;em&gt;Giscus&lt;/em&gt; working are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the repository is &lt;a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility#making-a-repository-public"&gt;public&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the &lt;a href="https://github.com/apps/giscus"&gt;Giscus app&lt;/a&gt; is installed&lt;/li&gt;
+&lt;li&gt;the &lt;a href="https://docs.github.com/en/github/administering-a-repository/managing-repository-settings/enabling-or-disabling-github-discussions-for-a-repository"&gt;Discussions&lt;/a&gt; feature is turned on for your repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If any of these conditions cannot be fulfilled for any reason, unfortunately, &lt;em&gt;Giscus&lt;/em&gt; cannot be integrated.&lt;/p&gt;
+&lt;h3 id="configuring-giscus"&gt;Configuring &lt;em&gt;Giscus&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Next, configuring &lt;em&gt;Giscus&lt;/em&gt; is necessary. In most cases, the preselected defaults are suitable, and you should only modify them if you have a specific reason and know what you are doing. Don&amp;rsquo;t worry too much about making the wrong choices; you can always adjust the configuration later on.&lt;/p&gt;</description></item><item><title>How to use Git Hooks to set Created and Modified Dates</title><link>https://hugopaper.github.io/post/setting-dates-via-git-hooks/</link><pubDate>Wed, 03 Jan 2024 20:40:08 +0000</pubDate><author>Simon Smale</author><guid>https://hugopaper.github.io/post/setting-dates-via-git-hooks/</guid><description>&lt;p&gt;In this post I will explain how to use the pre-commit Git hook to automate the input of the created (&lt;code&gt;pubDatetime&lt;/code&gt;) and modified (&lt;code&gt;modDatetime&lt;/code&gt;) in the AstroPaper blog theme frontmatter&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="have-them-everywhere"&gt;Have them Everywhere&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks"&gt;Git hooks&lt;/a&gt; are great for automating tasks like &lt;a href="https://gist.github.com/SSmale/3b380e5bbed3233159fb7031451726ea"&gt;adding&lt;/a&gt; or &lt;a href="https://itnext.io/using-git-hooks-to-enforce-branch-naming-policy-ffd81fa01e5e"&gt;checking&lt;/a&gt; the branch name to your commit messages or &lt;a href="https://gist.github.com/SSmale/367deee757a9b2e119d241e120249000"&gt;stopping you committing plain text secrets&lt;/a&gt;. Their biggest flaw is that client-side hooks are per machine.&lt;/p&gt;
+&lt;p&gt;You can get around this by having a &lt;code&gt;hooks&lt;/code&gt; directory and manually copy them to the &lt;code&gt;.git/hooks&lt;/code&gt; directory or set up a symlink, but this all requires you to remember to set it up, and that is not something I am good at doing.&lt;/p&gt;
+&lt;p&gt;As this project uses npm, we are able to make use of a package called &lt;a href="https://typicode.github.io/husky/"&gt;Husky&lt;/a&gt; (this is already installed in AstroPaper) to automatically install the hooks for us.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Update! In AstroPaper &lt;a href="https://github.com/satnaing/astro-paper/releases/tag/v4.3.0"&gt;v4.3.0&lt;/a&gt;, the pre-commit hook has been removed in favor of GitHub Actions. However, you can easily &lt;a href="https://typicode.github.io/husky/get-started.html"&gt;install Husky&lt;/a&gt; yourself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="the-hook"&gt;The Hook&lt;/h2&gt;
+&lt;p&gt;As we want this hook to run as we commit the code to update the dates and then have that as part of our change we are going to use the &lt;code&gt;pre-commit&lt;/code&gt; hook. This has already been set up by this AstroPaper project, but if it hadn&amp;rsquo;t, you would run &lt;code&gt;npx husky add .husky/pre-commit 'echo &amp;quot;This is our new pre-commit hook&amp;quot;'&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Customizing AstroPaper theme color schemes</title><link>https://hugopaper.github.io/post/customizing-astropaper-theme-color-schemes/</link><pubDate>Sun, 25 Sep 2022 15:20:35 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/post/customizing-astropaper-theme-color-schemes/</guid><description>&lt;p&gt;This post will explain how you can enable/disable light &amp;amp; dark mode for the website. Moreover, you&amp;rsquo;ll learn how you can customize color schemes of the entire website.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="enabledisable-light--dark-mode"&gt;Enable/disable light &amp;amp; dark mode&lt;/h2&gt;
+&lt;p&gt;AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes_ one for light mode and another for dark mode. This default behavior can be disabled in &lt;code&gt;SITE&lt;/code&gt; configuration object.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;export&lt;/span&gt; &lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;SITE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;website&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://astro-paper.pages.dev/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// replace this with your deployed domain
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Sat Naing&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;profile&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://satnaing.dev/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;desc&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;A minimal, responsive and SEO-friendly Astro blog theme.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;AstroPaper&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;ogImage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;astropaper-og.jpg&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;lightAndDarkMode&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// [!code highlight]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;postPerIndex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;postPerPage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;scheduledPostMargin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 15 minutes
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;showArchives&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;showBackButton&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// show back button in post detail
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;editPost&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;enabled&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Suggest Changes&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://github.com/satnaing/astro-paper/edit/main/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;dynamicOgImage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// html lang code. Set this empty and default will be &amp;#34;en&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;timezone&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Asia/Bangkok&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="kr"&gt;const&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To disable &lt;code&gt;light &amp;amp; dark mode&lt;/code&gt; set &lt;code&gt;SITE.lightAndDarkMode&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="choose-primary-color-scheme"&gt;Choose primary color scheme&lt;/h2&gt;
+&lt;p&gt;By default, if we disable &lt;code&gt;SITE.lightAndDarkMode&lt;/code&gt;, we will only get system&amp;rsquo;s prefers-color-scheme.&lt;/p&gt;
+&lt;p&gt;Thus, to choose primary color scheme instead of prefers-color-scheme, we have to set color scheme in the &lt;code&gt;primaryColorScheme&lt;/code&gt; variable inside &lt;code&gt;toggle-theme.js&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;primaryColorScheme&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// &amp;#34;light&amp;#34; | &amp;#34;dark&amp;#34; // [!code hl]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// Get theme data from local storage
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;currentTheme&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;localStorage&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getItem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;theme&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// ...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;strong&gt;primaryColorScheme&lt;/strong&gt; variable can hold two values_ &lt;code&gt;&amp;quot;light&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;dark&amp;quot;&lt;/code&gt;. You can leave the empty string (default) if you don&amp;rsquo;t want to specify the primary color scheme.&lt;/p&gt;</description></item><item><title>Adding new posts in AstroPaper theme</title><link>https://hugopaper.github.io/post/adding-new-posts-in-astropaper-theme/</link><pubDate>Fri, 23 Sep 2022 15:22:00 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/post/adding-new-posts-in-astropaper-theme/</guid><description>&lt;p&gt;Here are some rules/recommendations, tips &amp;amp; ticks for creating new posts in AstroPaper blog theme.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/159618/still-life-school-retro-ink-159618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+alt="Free Classic wooden desk with writing materials, vintage clock, and a leather bag. Stock Photo"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+Photo by &lt;a href="https://www.pexels.com/photo/brown-wooden-desk-159618/"&gt;Pixabay&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="creating-a-blog-post"&gt;Creating a Blog Post&lt;/h2&gt;
+&lt;p&gt;To write a new blog post, create a markdown file inside the &lt;code&gt;src/data/blog/&lt;/code&gt; directory.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Prior to AstroPaper v5.1.0, all blog posts had to be in &lt;code&gt;src/data/blog/&lt;/code&gt;, meaning you couldn&amp;rsquo;t organize them into subdirectories.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Starting from AstroPaper v5.1.0, you can now organize blog posts into subdirectories, making it easier to manage your content.&lt;/p&gt;
+&lt;p&gt;For example, if you want to group posts under &lt;code&gt;2025&lt;/code&gt;, you can place them in &lt;code&gt;src/data/blog/2025/&lt;/code&gt;. This also affects the post URL, so &lt;code&gt;src/data/blog/2025/example-post.md&lt;/code&gt; will be available at &lt;code&gt;/posts/2025/example-post&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t want subdirectories to affect the post URL, just prefix the folder name with an underscore &lt;code&gt;_&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Example: blog post structure and URLs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;src/data/blog/very-first-post.md -&amp;gt; mysite.com/posts/very-first-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;src/data/blog/2025/example-post.md -&amp;gt; mysite.com/posts/2025/example-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;src/data/blog/_2026/another-post.md -&amp;gt; mysite.com/posts/another-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;src/data/blog/docs/_legacy/how-to.md -&amp;gt; mysite.com/posts/docs/how-to
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;src/data/blog/Example Dir/Dummy Post.md -&amp;gt; mysite.com/posts/example-dir/dummy-post
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;💡 Tip: You can override a blog post&amp;rsquo;s slug in the frontmatter as well. See the next section for more details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If the subdirectory URL doesn&amp;rsquo;t appear in the build output, remove node_modules, reinstall packages, and then rebuild.&lt;/p&gt;</description></item><item><title>Adding new posts in HugoPaper theme</title><link>https://hugopaper.github.io/post/adding-new-posts-in-hugopaper-theme/</link><pubDate>Fri, 23 Sep 2022 15:22:00 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/post/adding-new-posts-in-hugopaper-theme/</guid><description>&lt;p&gt;Here are some rules/recommendations, tips &amp;amp; ticks for creating new posts in HugoPaper blog theme.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/159618/still-life-school-retro-ink-159618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+alt="Free Classic wooden desk with writing materials, vintage clock, and a leather bag. Stock Photo"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+Photo by &lt;a href="https://www.pexels.com/photo/brown-wooden-desk-159618/"&gt;Pixabay&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="creating-a-blog-post"&gt;Creating a Blog Post&lt;/h2&gt;
+&lt;p&gt;To write a new blog post, create a markdown file inside the &lt;code&gt;content/post/&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;You can organize blog posts into subdirectories, making it easier to manage your content.&lt;/p&gt;
+&lt;p&gt;For example, if you want to group posts under &lt;code&gt;2025&lt;/code&gt;, you can place them in &lt;code&gt;content/post/2025/&lt;/code&gt;. Hugo will automatically generate the appropriate URLs.&lt;/p&gt;
+&lt;div class="highlight" filename="Example"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Example: blog post structure and URLs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/very-first-post.md -&amp;gt; mysite.com/post/very-first-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/2025/example-post.md -&amp;gt; mysite.com/post/2025/example-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/docs/how-to.md -&amp;gt; mysite.com/post/docs/how-to
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;💡 Tip: You can override a blog post&amp;rsquo;s slug in the frontmatter using the &lt;code&gt;slug&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="frontmatter"&gt;Frontmatter&lt;/h2&gt;
+&lt;p&gt;Frontmatter is the main place to store some important information about the blog post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the list of frontmatter property for each post.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Remark&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;title&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Title of the post. (h1)&lt;/td&gt;
+&lt;td&gt;required&lt;sup&gt;*&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;description&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Description of the post. Used in post excerpt and site description of the post.&lt;/td&gt;
+&lt;td&gt;required&lt;sup&gt;*&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;date&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Published datetime in ISO 8601 format.&lt;/td&gt;
+&lt;td&gt;required&lt;sup&gt;*&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;lastmod&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Modified datetime in ISO 8601 format. (only add this property when a blog post is modified)&lt;/td&gt;
+&lt;td&gt;optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;author&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Author of the post.&lt;/td&gt;
+&lt;td&gt;default = site author&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;slug&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Slug for the post. This field is optional.&lt;/td&gt;
+&lt;td&gt;default = slugified file name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;featured&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Whether or not display this post in featured section of home page&lt;/td&gt;
+&lt;td&gt;default = false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;draft&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Mark this post &amp;lsquo;unpublished&amp;rsquo;.&lt;/td&gt;
+&lt;td&gt;default = false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;tags&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Related keywords for this post. Written in array yaml format.&lt;/td&gt;
+&lt;td&gt;default = []&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;categories&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Categories for this post. Written in array yaml format.&lt;/td&gt;
+&lt;td&gt;default = []&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;image&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Featured image of the post. Useful for social media sharing and SEO.&lt;/td&gt;
+&lt;td&gt;optional&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;&lt;em&gt;hideEditPost&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Hide editPost button under blog title. This applies only to the current blog post.&lt;/td&gt;
+&lt;td&gt;default = false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Only &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt; and &lt;code&gt;date&lt;/code&gt; fields in frontmatter must be specified.&lt;/p&gt;</description></item><item><title>How to configure AstroPaper theme</title><link>https://hugopaper.github.io/post/how-to-configure-astropaper-theme/</link><pubDate>Fri, 23 Sep 2022 04:58:53 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/post/how-to-configure-astropaper-theme/</guid><description>&lt;p&gt;AstroPaper is a highly customizable Astro blog theme. With AstroPaper, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="configuring-site"&gt;Configuring SITE&lt;/h2&gt;
+&lt;p&gt;The important configurations resides in &lt;code&gt;src/config.ts&lt;/code&gt; file. Within that file, you&amp;rsquo;ll see the &lt;code&gt;SITE&lt;/code&gt; object where you can specify your website&amp;rsquo;s main configurations.&lt;/p&gt;
+&lt;p&gt;During development, it&amp;rsquo;s okay to leave &lt;code&gt;SITE.website&lt;/code&gt; empty. But in production mode, you should specify your deployed url in &lt;code&gt;SITE.website&lt;/code&gt; option since this will be used for canonical URL, social card URL etc.. which are important for SEO.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-js" data-lang="js"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kr"&gt;export&lt;/span&gt; &lt;span class="kr"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;SITE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;website&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://astro-paper.pages.dev/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// replace this with your deployed domain
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Sat Naing&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;profile&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://satnaing.dev/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;desc&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;A minimal, responsive and SEO-friendly Astro blog theme.&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;AstroPaper&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;ogImage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;astropaper-og.jpg&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;lightAndDarkMode&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;postPerIndex&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;postPerPage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;scheduledPostMargin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// 15 minutes
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;showArchives&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;showBackButton&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// show back button in post detail
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;editPost&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;enabled&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Suggest Changes&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://github.com/satnaing/astro-paper/edit/main/&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;dynamicOgImage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// enable automatic dynamic og-image generation
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;dir&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;ltr&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// &amp;#34;rtl&amp;#34; | &amp;#34;auto&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;lang&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// html lang code. Set this empty and default will be &amp;#34;en&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;timezone&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Asia/Bangkok&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;// Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="kr"&gt;const&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here are SITE configuration options&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Options&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;website&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your deployed website URL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;author&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;profile&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your personal/portfolio website URL which is used for better SEO. Put &lt;code&gt;null&lt;/code&gt; or empty string &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; if you don&amp;rsquo;t have any.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;desc&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your site description. Useful for SEO and social media sharing.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your site name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ogImage&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Your default OG image for the site. Useful for social media sharing. OG images can be an external image URL or they can be placed under &lt;code&gt;/public&lt;/code&gt; directory.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;lightAndDarkMode&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Enable or disable &lt;code&gt;light &amp;amp; dark mode&lt;/code&gt; for the website. If disabled, primary color scheme will be used. This option is enabled by default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;postPerIndex&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The number of posts to be displayed at the home page under &lt;code&gt;Recent&lt;/code&gt; section.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;postPerPage&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;You can specify how many posts will be displayed in each posts page. (eg: if you set &lt;code&gt;SITE.postPerPage&lt;/code&gt; to 3, each page will only show 3 posts per page)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;scheduledPostMargin&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;In Production mode, posts with a future &lt;code&gt;pubDatetime&lt;/code&gt; will not be visible. However, if a post&amp;rsquo;s &lt;code&gt;pubDatetime&lt;/code&gt; is within the next 15 minutes, it will be visible. You can set &lt;code&gt;scheduledPostMargin&lt;/code&gt; if you don&amp;rsquo;t like the default 15 minutes margin.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;showArchives&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Determines whether to display the &lt;code&gt;Archives&lt;/code&gt; menu (positioned between the &lt;code&gt;About&lt;/code&gt; and &lt;code&gt;Search&lt;/code&gt; menus) and its corresponding page on the site. This option is set to &lt;code&gt;true&lt;/code&gt; by default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;showBackButton&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Determines whether to display the &lt;code&gt;Go back&lt;/code&gt; button in each blog post.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;editPost&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;This option allows users to suggest changes to a blog post by providing an edit link under blog post titles. This feature can be disabled by setting &lt;code&gt;SITE.editPost.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dynamicOgImage&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;This option controls whether to &lt;a href="https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/"&gt;generate dynamic og-image&lt;/a&gt; if no &lt;code&gt;ogImage&lt;/code&gt; is specified in the blog post frontmatter. If you have many blog posts, you might want to disable this feature. See the &lt;a href="https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/#trade-off"&gt;trade-off&lt;/a&gt; for more details.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;dir&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Specifies the text direction of the entire blog. Used as &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/dir"&gt;HTML dir attribute&lt;/a&gt; in &lt;code&gt;&amp;lt;html dir=&amp;quot;ltr&amp;quot;&amp;gt;&lt;/code&gt;. Supported values: &lt;code&gt;ltr&lt;/code&gt; | &lt;code&gt;rtl&lt;/code&gt; | &lt;code&gt;auto&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;lang&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Used as HTML ISO Language code in &lt;code&gt;&amp;lt;html lang&amp;quot;en&amp;quot;&amp;gt;&lt;/code&gt;. Default is &lt;code&gt;en&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;timezone&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;This option allows you to specify your timezone using the &lt;a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"&gt;IANA format&lt;/a&gt;. Setting this ensures consistent timestamps across your localhost and deployed site, eliminating time differences.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="update-layout-width"&gt;Update layout width&lt;/h2&gt;
+&lt;p&gt;The default &lt;code&gt;max-width&lt;/code&gt; for the entire blog is &lt;code&gt;768px&lt;/code&gt; (&lt;code&gt;max-w-3xl&lt;/code&gt;). If you&amp;rsquo;d like to change it, you can easily update the &lt;code&gt;max-w-app&lt;/code&gt; utility in your &lt;code&gt;global.css&lt;/code&gt;. For instance:&lt;/p&gt;</description></item></channel></rss>

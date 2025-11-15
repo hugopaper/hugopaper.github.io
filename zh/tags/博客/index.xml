@@ -1,0 +1,14 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客 on HugoPaper</title><link>https://hugopaper.github.io/zh/tags/%E5%8D%9A%E5%AE%A2/</link><description>Recent content in 博客 on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 15 Nov 2024 10:00:00 +0800</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>如何使用 Hugo Paper 的 New-Post 脚本创建 SEO 优化的博客文章</title><link>https://hugopaper.github.io/zh/post/create-seo-optimized-posts-hugo-paper-new-post-script/</link><pubDate>Fri, 15 Nov 2024 10:00:00 +0800</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/create-seo-optimized-posts-hugo-paper-new-post-script/</guid><description>&lt;p&gt;创建具有适当 SEO 优化的博客文章可能很耗时。Hugo Paper 的 &lt;code&gt;new-post&lt;/code&gt; 脚本自动化了这个过程，帮助你在几秒钟内创建结构良好、SEO 友好的文章。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="为什么使用-new-post-脚本"&gt;为什么使用 New-Post 脚本？&lt;/h2&gt;
+&lt;p&gt;传统的博客文章创建需要手动设置包含众多 SEO 字段的 frontmatter。&lt;code&gt;new-post&lt;/code&gt; 脚本通过以下方式简化了这个过程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;交互式提示&lt;/strong&gt; - 引导你完成所有 SEO 字段&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;自动生成 slug&lt;/strong&gt; - 创建 SEO 友好的 URL&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;时间戳管理&lt;/strong&gt; - 添加正确的日期/时间格式&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;多语言支持&lt;/strong&gt; - 创建中文或英文文章&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;SEO 最佳实践&lt;/strong&gt; - 确保所有必需字段都存在&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;一致的结构&lt;/strong&gt; - 维护统一的文章格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="前置要求"&gt;前置要求&lt;/h2&gt;
+&lt;p&gt;使用脚本前，确保你已安装：&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,17 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ReactJS on HugoPaper</title><link>https://hugopaper.github.io/tags/reactjs/</link><description>Recent content in ReactJS on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Jun 2022 03:42:51 +0000</lastBuildDate><atom:link href="https://hugopaper.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml"/><item><title>How Do I Develop My Terminal Portfolio Website with React</title><link>https://hugopaper.github.io/post/examples/how-do-i-develop-my-terminal-portfolio-website-with-react/</link><pubDate>Thu, 09 Jun 2022 03:42:51 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/post/examples/how-do-i-develop-my-terminal-portfolio-website-with-react/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;This article is originally from my &lt;a href="https://satnaing.dev/blog/posts/how-do-i-develop-my-terminal-portfolio-website-with-react"&gt;blog post&lt;/a&gt;. I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Developing a terminal-like website using ReactJS, TypeScript and Styled-Components. Includes features like autocomplete, multiple themes, command hints etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://satnaing.dev/_ipx/w_2048,q_75/https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1654754125%2FSatNaing%2Fterminal-screenshot_gu3kkc.png?url=https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1654754125%2FSatNaing%2Fterminal-screenshot_gu3kkc.png&amp;amp;w=2048&amp;amp;q=75" alt="Sat Naing’s Terminal Portfolio"&gt;&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;h2 id="intro"&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Recently, I&amp;rsquo;ve developed and published my portfolio + a blog. I’m glad I got some good feedback for it. Today, I want to introduce my new terminal-like portfolio website. It is developed using ReactJS, TypeScript. I got this idea from CodePen and YouTube.&lt;/p&gt;
+&lt;h2 id="tech-stack"&gt;Tech Stack&lt;/h2&gt;
+&lt;p&gt;This project is a frontend project without any backend codes. The UI/UX part is designed in Figma. For the frontend user-interface, I chose React over pain JavaScript and NextJS. Why?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firstly, I want to write declarative code. Managing HTML DOM using JavaScript imperatively is really tedious.&lt;/li&gt;
+&lt;li&gt;Secondly, because it is React!!! It is fast, and reliable.&lt;/li&gt;
+&lt;li&gt;Lastly, I don’t need much of the SEO features, routing and image optimization provided by NextJS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And of course there&amp;rsquo;s TypeScript for type checking.&lt;/p&gt;
+&lt;p&gt;For styling, I took a different approach than what I usually do. Instead of choosing Pure CSS, Sass, or Utility CSS Framework like TailwindCSS, I chose the CSS-in-JS way (Styled-Components). Although I’ve known about Styled-Components for some time, I’ve never tried it out. So, the writing style and structures of Styled-Components in this project may not be very organized or very good.&lt;/p&gt;</description></item></channel></rss>

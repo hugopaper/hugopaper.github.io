@@ -1,0 +1,82 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on HugoPaper</title><link>https://hugopaper.github.io/zh/categories/tutorial/</link><description>Recent content in Tutorial on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/categories/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Paper 入门指南</title><link>https://hugopaper.github.io/zh/post/getting-started/</link><pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/zh/post/getting-started/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hugo Paper is a minimal, fast, and responsive Hugo theme designed for bloggers and developers. This guide will help you get started with the theme quickly.&lt;/p&gt;
+&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+&lt;h3 id="step-1-download-hugo-paper"&gt;Step 1: Download Hugo Paper&lt;/h3&gt;
+&lt;p&gt;First, you need to have Hugo installed on your system. If you haven&amp;rsquo;t installed Hugo yet, visit the &lt;a href="https://gohugo.io/installation/"&gt;official Hugo website&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="step-2-create-a-new-site"&gt;Step 2: Create a New Site&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new site my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="step-3-add-hugo-paper-theme"&gt;Step 3: Add Hugo Paper Theme&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Using git submodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git submodule add https://github.com/ouraihub-hugo-themes/hugo-paper.git themes/hugo-paper
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Update hugo.toml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;theme = &amp;#34;hugo-paper&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;h3 id="basic-configuration"&gt;Basic Configuration&lt;/h3&gt;
+&lt;p&gt;Edit your &lt;code&gt;hugo.toml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;baseURL&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://yourdomain.com/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;languageCode&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;title&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;My Awesome Blog&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;theme&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;hugo-paper&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="customize-parameters"&gt;Customize Parameters&lt;/h3&gt;
+&lt;p&gt;Create or edit &lt;code&gt;params.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;header&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;logo&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;/logo.svg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;logoText&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;My Blog&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;footer&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;copyright&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;© 2024 My Blog. All rights reserved.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="creating-content"&gt;Creating Content&lt;/h2&gt;
+&lt;h3 id="create-your-first-post"&gt;Create Your First Post&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new post/hello-world.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit the generated file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;title: &amp;#34;Hello World&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;description: &amp;#34;My first blog post&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;date: 2024-11-11
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;draft: false
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;categories:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;-&lt;/span&gt; &amp;#34;Welcome&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tags:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;-&lt;/span&gt; &amp;#34;hello&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;This is my first post!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="create-a-page"&gt;Create a Page&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new about.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="running-locally"&gt;Running Locally&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Development server with live reload&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Build for production&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Visit &lt;code&gt;http://localhost:1313&lt;/code&gt; to see your site.&lt;/p&gt;
+&lt;h2 id="customization"&gt;Customization&lt;/h2&gt;
+&lt;h3 id="changing-colors"&gt;Changing Colors&lt;/h3&gt;
+&lt;p&gt;Edit &lt;code&gt;assets/css/main.css&lt;/code&gt; and modify the CSS variables in &lt;code&gt;:root&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>在 HugoPaper 主题中添加新文章</title><link>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</link><pubDate>Fri, 23 Sep 2022 15:22:00 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</guid><description>&lt;p&gt;以下是在 HugoPaper 博客主题中创建新文章的一些规则/建议、技巧和窍门。&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/159618/still-life-school-retro-ink-159618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+alt="经典木质书桌与书写材料、复古时钟和皮包"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+图片来自 &lt;a href="https://www.pexels.com/photo/brown-wooden-desk-159618/"&gt;Pixabay&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="创建博客文章"&gt;创建博客文章&lt;/h2&gt;
+&lt;p&gt;要编写新的博客文章，请在 &lt;code&gt;content/post/&lt;/code&gt; 目录中创建一个 markdown 文件。&lt;/p&gt;
+&lt;p&gt;你可以将博客文章组织到子目录中，这样更容易管理内容。&lt;/p&gt;
+&lt;p&gt;例如，如果你想将文章分组到 &lt;code&gt;2025&lt;/code&gt; 下，可以将它们放在 &lt;code&gt;content/post/2025/&lt;/code&gt; 中。Hugo 会自动生成相应的 URL。&lt;/p&gt;
+&lt;div class="highlight" filename="示例"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 示例：博客文章结构和 URL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/very-first-post.md -&amp;gt; mysite.com/post/very-first-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/2025/example-post.md -&amp;gt; mysite.com/post/2025/example-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/docs/how-to.md -&amp;gt; mysite.com/post/docs/how-to
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;💡 提示：你可以在 frontmatter 中使用 &lt;code&gt;slug&lt;/code&gt; 参数覆盖博客文章的 slug。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="front-matter"&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;Front Matter 是存储博客文章（文章）重要信息的主要位置。Front Matter 位于文章顶部，以 YAML 格式编写。在 &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo 文档&lt;/a&gt;中了解更多关于 frontmatter 及其用法的信息。&lt;/p&gt;</description></item></channel></rss>

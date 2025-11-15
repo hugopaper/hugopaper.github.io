@@ -1,0 +1,21 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Schema-Org on HugoPaper</title><link>https://hugopaper.github.io/zh/tags/schema-org/</link><description>Recent content in Schema-Org on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 15 Nov 2024 12:00:00 +0800</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/tags/schema-org/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Paper 完整 SEO 优化指南：在 Google 上获得更高排名</title><link>https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/</link><pubDate>Fri, 15 Nov 2024 12:00:00 +0800</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/</guid><description>&lt;p&gt;Hugo Paper 内置了全面的 SEO 优化功能。学习如何利用 Schema.org 结构化数据、meta 标签和最佳实践在 Google 上获得更高排名并增加自然流量。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="为什么-seo-很重要"&gt;为什么 SEO 很重要&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;良好 SEO 的影响：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📈 &lt;strong&gt;53% 的网站流量&lt;/strong&gt;来自自然搜索&lt;/li&gt;
+&lt;li&gt;🎯 &lt;strong&gt;75% 的用户&lt;/strong&gt;从不滚动到第一页之后&lt;/li&gt;
+&lt;li&gt;💰 &lt;strong&gt;SEO 线索的成交率为 14.6%&lt;/strong&gt; vs 外向营销的 1.7%&lt;/li&gt;
+&lt;li&gt;⏱️ &lt;strong&gt;长期效果&lt;/strong&gt; - 随时间复利增长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hugo Paper 的 SEO 优势：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ 快速加载（静态 HTML）&lt;/li&gt;
+&lt;li&gt;✅ 移动友好（响应式设计）&lt;/li&gt;
+&lt;li&gt;✅ 简洁 URL（SEO 友好的 slug）&lt;/li&gt;
+&lt;li&gt;✅ 结构化数据（Schema.org）&lt;/li&gt;
+&lt;li&gt;✅ 语义化 HTML（正确的标签）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hugo-paper-的-seo-功能"&gt;Hugo Paper 的 SEO 功能&lt;/h2&gt;
+&lt;h3 id="1-全面的-meta-标签"&gt;1. 全面的 Meta 标签&lt;/h3&gt;
+&lt;p&gt;Hugo Paper 自动生成：&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,258 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文章 on HugoPaper</title><link>https://hugopaper.github.io/zh/post/</link><description>Recent content in 文章 on HugoPaper</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Fri, 15 Nov 2024 12:00:00 +0800</lastBuildDate><atom:link href="https://hugopaper.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo Paper 完整 SEO 优化指南：在 Google 上获得更高排名</title><link>https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/</link><pubDate>Fri, 15 Nov 2024 12:00:00 +0800</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/seo-optimization-guide-hugo-paper-google-ranking/</guid><description>&lt;p&gt;Hugo Paper 内置了全面的 SEO 优化功能。学习如何利用 Schema.org 结构化数据、meta 标签和最佳实践在 Google 上获得更高排名并增加自然流量。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="为什么-seo-很重要"&gt;为什么 SEO 很重要&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;良好 SEO 的影响：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📈 &lt;strong&gt;53% 的网站流量&lt;/strong&gt;来自自然搜索&lt;/li&gt;
+&lt;li&gt;🎯 &lt;strong&gt;75% 的用户&lt;/strong&gt;从不滚动到第一页之后&lt;/li&gt;
+&lt;li&gt;💰 &lt;strong&gt;SEO 线索的成交率为 14.6%&lt;/strong&gt; vs 外向营销的 1.7%&lt;/li&gt;
+&lt;li&gt;⏱️ &lt;strong&gt;长期效果&lt;/strong&gt; - 随时间复利增长&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Hugo Paper 的 SEO 优势：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ 快速加载（静态 HTML）&lt;/li&gt;
+&lt;li&gt;✅ 移动友好（响应式设计）&lt;/li&gt;
+&lt;li&gt;✅ 简洁 URL（SEO 友好的 slug）&lt;/li&gt;
+&lt;li&gt;✅ 结构化数据（Schema.org）&lt;/li&gt;
+&lt;li&gt;✅ 语义化 HTML（正确的标签）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="hugo-paper-的-seo-功能"&gt;Hugo Paper 的 SEO 功能&lt;/h2&gt;
+&lt;h3 id="1-全面的-meta-标签"&gt;1. 全面的 Meta 标签&lt;/h3&gt;
+&lt;p&gt;Hugo Paper 自动生成：&lt;/p&gt;</description></item><item><title>Hugo Paper 动态 OG 图片生成：提升社交媒体互动率</title><link>https://hugopaper.github.io/zh/post/dynamic-og-images-hugo-paper-social-media/</link><pubDate>Fri, 15 Nov 2024 11:00:00 +0800</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/dynamic-og-images-hugo-paper-social-media/</guid><description>&lt;p&gt;Open Graph (OG) 图片对社交媒体分享至关重要。Hugo Paper 的动态 OG 图片生成功能使用 Unsplash API 自动创建精美、相关的预览图片——无需手动工作。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="什么是-og-图片"&gt;什么是 OG 图片？&lt;/h2&gt;
+&lt;p&gt;Open Graph 图片是在社交媒体平台上分享链接时显示的预览图片，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Facebook&lt;/strong&gt; - 显示在动态和时间线中&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt; - 显示为 Twitter 卡片&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt; - 出现在专业帖子中&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Discord/Slack&lt;/strong&gt; - 显示在消息预览中&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WhatsApp&lt;/strong&gt; - 显示在链接预览中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="为什么-og-图片很重要"&gt;为什么 OG 图片很重要&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;对互动的影响：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📈 &lt;strong&gt;点击率提高 30-50%&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;👁️ &lt;strong&gt;视觉关注度提升 3 倍&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🔄 &lt;strong&gt;分享次数增加 2 倍&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;strong&gt;更好的对话启动器&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;没有 OG 图片：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>如何使用 Hugo Paper 的 New-Post 脚本创建 SEO 优化的博客文章</title><link>https://hugopaper.github.io/zh/post/create-seo-optimized-posts-hugo-paper-new-post-script/</link><pubDate>Fri, 15 Nov 2024 10:00:00 +0800</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/create-seo-optimized-posts-hugo-paper-new-post-script/</guid><description>&lt;p&gt;创建具有适当 SEO 优化的博客文章可能很耗时。Hugo Paper 的 &lt;code&gt;new-post&lt;/code&gt; 脚本自动化了这个过程，帮助你在几秒钟内创建结构良好、SEO 友好的文章。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="为什么使用-new-post-脚本"&gt;为什么使用 New-Post 脚本？&lt;/h2&gt;
+&lt;p&gt;传统的博客文章创建需要手动设置包含众多 SEO 字段的 frontmatter。&lt;code&gt;new-post&lt;/code&gt; 脚本通过以下方式简化了这个过程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;✅ &lt;strong&gt;交互式提示&lt;/strong&gt; - 引导你完成所有 SEO 字段&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;自动生成 slug&lt;/strong&gt; - 创建 SEO 友好的 URL&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;时间戳管理&lt;/strong&gt; - 添加正确的日期/时间格式&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;多语言支持&lt;/strong&gt; - 创建中文或英文文章&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;SEO 最佳实践&lt;/strong&gt; - 确保所有必需字段都存在&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;一致的结构&lt;/strong&gt; - 维护统一的文章格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="前置要求"&gt;前置要求&lt;/h2&gt;
+&lt;p&gt;使用脚本前，确保你已安装：&lt;/p&gt;</description></item><item><title>Hugo Paper 中的动态 OG 图片生成</title><link>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper 团队</author><guid>https://hugopaper.github.io/zh/post/dynamic-og-image-generation-in-hugo-paper/</guid><description>&lt;p&gt;Hugo Paper 引入了强大的动态 OG 图片生成功能，使用 Unsplash API 自动为你的博客文章创建美观、相关的社交媒体预览图片。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Open Graph (OG) 图片对于社交媒体分享至关重要，当你的博客文章在 Twitter、Facebook、LinkedIn 等平台上分享时，它们提供视觉预览。这些预览图片可以将点击率提高 30-50%，并显著改善互动效果。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;虽然 Twitter 在技术上使用的是&amp;quot;Twitter Cards&amp;quot;而不是 Open Graph，但为了简单起见，我们将使用术语&amp;quot;OG 图片&amp;quot;来指代所有社交媒体预览图片。&lt;/p&gt;</description></item><item><title>Hugo Paper 入门指南</title><link>https://hugopaper.github.io/zh/post/getting-started/</link><pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/zh/post/getting-started/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hugo Paper is a minimal, fast, and responsive Hugo theme designed for bloggers and developers. This guide will help you get started with the theme quickly.&lt;/p&gt;
+&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+&lt;h3 id="step-1-download-hugo-paper"&gt;Step 1: Download Hugo Paper&lt;/h3&gt;
+&lt;p&gt;First, you need to have Hugo installed on your system. If you haven&amp;rsquo;t installed Hugo yet, visit the &lt;a href="https://gohugo.io/installation/"&gt;official Hugo website&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="step-2-create-a-new-site"&gt;Step 2: Create a New Site&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new site my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="step-3-add-hugo-paper-theme"&gt;Step 3: Add Hugo Paper Theme&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Using git submodule&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git submodule add https://github.com/ouraihub-hugo-themes/hugo-paper.git themes/hugo-paper
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Update hugo.toml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;theme = &amp;#34;hugo-paper&amp;#34;&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; hugo.toml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+&lt;h3 id="basic-configuration"&gt;Basic Configuration&lt;/h3&gt;
+&lt;p&gt;Edit your &lt;code&gt;hugo.toml&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;baseURL&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;https://yourdomain.com/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;languageCode&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;en-us&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;title&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;My Awesome Blog&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;theme&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;hugo-paper&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="customize-parameters"&gt;Customize Parameters&lt;/h3&gt;
+&lt;p&gt;Create or edit &lt;code&gt;params.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;header&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;logo&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;/logo.svg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;logoText&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;My Blog&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;footer&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;copyright&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;© 2024 My Blog. All rights reserved.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="creating-content"&gt;Creating Content&lt;/h2&gt;
+&lt;h3 id="create-your-first-post"&gt;Create Your First Post&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new post/hello-world.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit the generated file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;title: &amp;#34;Hello World&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;description: &amp;#34;My first blog post&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;date: 2024-11-11
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;draft: false
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;categories:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;-&lt;/span&gt; &amp;#34;Welcome&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tags:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;-&lt;/span&gt; &amp;#34;hello&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;This is my first post!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="create-a-page"&gt;Create a Page&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new about.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="running-locally"&gt;Running Locally&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Development server with live reload&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# Build for production&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Visit &lt;code&gt;http://localhost:1313&lt;/code&gt; to see your site.&lt;/p&gt;
+&lt;h2 id="customization"&gt;Customization&lt;/h2&gt;
+&lt;h3 id="changing-colors"&gt;Changing Colors&lt;/h3&gt;
+&lt;p&gt;Edit &lt;code&gt;assets/css/main.css&lt;/code&gt; and modify the CSS variables in &lt;code&gt;:root&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Tailwind CSS v4 最佳实践</title><link>https://hugopaper.github.io/zh/post/tailwind-v4-best-practices/</link><pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate><author>Hugo Paper Team</author><guid>https://hugopaper.github.io/zh/post/tailwind-v4-best-practices/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Tailwind CSS v4 brings powerful new features and improvements. Let&amp;rsquo;s explore some best practices for using it effectively in your Hugo Paper projects.&lt;/p&gt;
+&lt;h2 id="utility-first-approach"&gt;Utility-First Approach&lt;/h2&gt;
+&lt;p&gt;The core philosophy of Tailwind CSS is utility-first. Instead of writing custom CSS, you compose styles using utility classes.&lt;/p&gt;
+&lt;h3 id="good-example"&gt;Good Example&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;flex items-center justify-between p-4 bg-primary text-white rounded-lg&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;h2&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;text-lg font-bold&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Title&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;px-4 py-2 bg-white text-primary rounded hover:bg-gray-100 transition-colors&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; Action
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="avoid-custom-css-for-simple-styles"&gt;Avoid Custom CSS for Simple Styles&lt;/h3&gt;
+&lt;p&gt;❌ &lt;strong&gt;Don&amp;rsquo;t do this:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;card&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="kt"&gt;rem&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;border-radius&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="kt"&gt;rem&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;box-shadow&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="nb"&gt;rgba&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;✅ &lt;strong&gt;Do this instead:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;p-4 rounded-lg shadow-sm&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;...&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="component-extraction"&gt;Component Extraction&lt;/h2&gt;
+&lt;p&gt;When styles are repeated, extract them into components or use &lt;code&gt;@apply&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;layer&lt;/span&gt; &lt;span class="nt"&gt;components&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;btn-primary&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="err"&gt;@apply&lt;/span&gt; &lt;span class="err"&gt;px-4&lt;/span&gt; &lt;span class="err"&gt;py-2&lt;/span&gt; &lt;span class="err"&gt;bg-primary&lt;/span&gt; &lt;span class="err"&gt;text-white&lt;/span&gt; &lt;span class="err"&gt;rounded-lg&lt;/span&gt; &lt;span class="err"&gt;font-medium&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;hover&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;bg-accent&lt;/span&gt; &lt;span class="k"&gt;transition&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;colors&lt;/span&gt; &lt;span class="n"&gt;duration-200&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then use it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;btn-primary&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Click me&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="responsive-design"&gt;Responsive Design&lt;/h2&gt;
+&lt;p&gt;Tailwind makes responsive design simple with breakpoint prefixes:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;&amp;lt;!-- Mobile: 1 column, Tablet: 2 columns, Desktop: 3 columns --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c"&gt;&amp;lt;!-- content --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dark-mode"&gt;Dark Mode&lt;/h2&gt;
+&lt;p&gt;Hugo Paper includes dark mode support using CSS variables:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;&amp;lt;!-- This will automatically adjust for dark mode --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;bg-background text-foreground&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;text-muted&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;This text adjusts based on theme&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="performance-tips"&gt;Performance Tips&lt;/h2&gt;
+&lt;h3 id="1-avoid-arbitrary-values-when-possible"&gt;1. Avoid Arbitrary Values When Possible&lt;/h3&gt;
+&lt;p&gt;❌ Avoid: &lt;code&gt;class=&amp;quot;w-[347px]&amp;quot;&lt;/code&gt;&lt;br&gt;
+✅ Prefer: &lt;code&gt;class=&amp;quot;w-full max-w-md&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id="2-use-content-configuration"&gt;2. Use Content Configuration&lt;/h3&gt;
+&lt;p&gt;Make sure your &lt;code&gt;tailwind.config.js&lt;/code&gt; has the correct content paths:&lt;/p&gt;</description></item><item><title>如何将 Giscus 评论集成到 AstroPaper</title><link>https://hugopaper.github.io/zh/post/how-to-integrate-giscus-comments/</link><pubDate>Thu, 25 Jul 2024 11:11:53 +0000</pubDate><author>FjellOverflow</author><guid>https://hugopaper.github.io/zh/post/how-to-integrate-giscus-comments/</guid><description>&lt;p&gt;在 &lt;a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"&gt;GitHub Pages&lt;/a&gt; 等平台上托管轻量级静态博客有很多优势，但也失去了一些交互性。幸运的是，&lt;a href="https://giscus.app/"&gt;Giscus&lt;/a&gt; 的存在提供了一种在静态网站上嵌入用户评论的方法。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="giscus-的工作原理"&gt;&lt;em&gt;Giscus&lt;/em&gt; 的工作原理&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/giscus/giscus?tab=readme-ov-file#how-it-works"&gt;Giscus 使用 GitHub API&lt;/a&gt; 来读取和存储 &lt;em&gt;GitHub&lt;/em&gt; 用户在与仓库关联的 &lt;code&gt;Discussions&lt;/code&gt; 中发表的评论。&lt;/p&gt;
+&lt;p&gt;在你的网站上嵌入 &lt;em&gt;Giscus&lt;/em&gt; 客户端脚本包，使用正确的仓库 URL 进行配置，用户就可以查看和撰写评论（当登录到 &lt;em&gt;GitHub&lt;/em&gt; 时）。&lt;/p&gt;
+&lt;p&gt;这种方法是无服务器的，因为评论存储在 &lt;em&gt;GitHub&lt;/em&gt; 上，并在客户端动态加载，因此非常适合像 &lt;em&gt;AstroPaper&lt;/em&gt; 这样的静态博客。&lt;/p&gt;
+&lt;h2 id="设置-giscus"&gt;设置 &lt;em&gt;Giscus&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Giscus&lt;/em&gt; 可以在 &lt;a href="https://giscus.app/"&gt;giscus.app&lt;/a&gt; 上轻松设置，但我还是会简要概述这个过程。&lt;/p&gt;</description></item><item><title>预定义配色方案</title><link>https://hugopaper.github.io/zh/post/predefined-color-schemes/</link><pubDate>Mon, 26 Sep 2022 12:13:24 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/zh/post/predefined-color-schemes/</guid><description>&lt;p&gt;我为这个 AstroPaper 博客主题精心设计了一些预定义的配色方案。你可以用这些配色方案替换原来的。&lt;/p&gt;
+&lt;p&gt;如果你不知道如何配置配色方案，请查看&lt;a href="https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/"&gt;这篇博客文章&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="浅色配色方案"&gt;浅色配色方案&lt;/h2&gt;
+&lt;p&gt;浅色配色方案必须使用 CSS 选择器 &lt;code&gt;:root&lt;/code&gt; 和 &lt;code&gt;html[data-theme=&amp;quot;light&amp;quot;]&lt;/code&gt; 定义。&lt;/p&gt;
+&lt;h3 id="lobster龙虾"&gt;Lobster（龙虾）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/192282447-1d222faf-a3ce-44a9-9cfe-ac873155e5a9.png" alt="lobster-color-scheme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;root&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;light&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#f6eee1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#012c56&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#e14a39&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#efd8b0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#dc9891&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="leaf-blue叶蓝"&gt;Leaf Blue（叶蓝）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/192318782-e80e3c39-54b5-423e-8f4b-9ae60402fc8d.png" alt="leaf-blue-color-scheme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;root&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;light&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#f2f5ec&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#353538&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#1158d1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#bbc789&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#7cadff&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="pinky-light粉红浅色"&gt;Pinky light（粉红浅色）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/192286510-892d0042-2d6d-471e-bb72-954221ae2d17.png" alt="pinky-color-scheme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;root&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;light&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#fafcfc&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#222e36&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#d3006a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#f1bad4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#e3a9c6&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="深色配色方案"&gt;深色配色方案&lt;/h2&gt;
+&lt;p&gt;深色配色方案必须定义为 &lt;code&gt;html[data-theme=&amp;quot;dark&amp;quot;]&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id="astropaper-1-原始深色主题"&gt;AstroPaper 1 原始深色主题&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/215769153-13b0ad8d-5ba2-44b1-af06-e5ae61293f62.png" alt="AstroPaper 1 default dark theme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;dark&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#2f3741&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#e6e6e6&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#1ad9d9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#596b81&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#3b4655&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="deep-oyster深海牡蛎"&gt;Deep Oyster（深海牡蛎）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/192314524-45ec5904-3d8f-450a-9edf-1e32c5e11d6c.png" alt="deep-oyster-color-scheme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;dark&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#21233d&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#f4f7f5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#ff5256&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#4a4e86&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#b12f32&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="pikky-dark粉红深色"&gt;Pikky dark（粉红深色）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/192307050-fbd55326-911c-4001-87c6-a8ad9378ac2e.png" alt="pinky-dark-color-scheme"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-css" data-lang="css"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="nt"&gt;data-theme&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;dark&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--background&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#353640&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--foreground&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#e9edf1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--accent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#ff78c8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--muted&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#715566&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nv"&gt;--border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#86436b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="astro-dark高对比度"&gt;Astro dark（高对比度）&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/53733092/215680520-59427bb0-f4cb-48c0-bccc-f182a428d72d.svg" alt="astro-dark-color-scheme"&gt;&lt;/p&gt;</description></item><item><title>在 HugoPaper 主题中添加新文章</title><link>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</link><pubDate>Fri, 23 Sep 2022 15:22:00 +0000</pubDate><author>Sat Naing</author><guid>https://hugopaper.github.io/zh/post/adding-new-posts-in-hugopaper-theme/</guid><description>&lt;p&gt;以下是在 HugoPaper 博客主题中创建新文章的一些规则/建议、技巧和窍门。&lt;/p&gt;
+&lt;figure&gt;
+&lt;img
+src="https://images.pexels.com/photos/159618/still-life-school-retro-ink-159618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+alt="经典木质书桌与书写材料、复古时钟和皮包"
+/&gt;
+&lt;figcaption class="text-center"&gt;
+图片来自 &lt;a href="https://www.pexels.com/photo/brown-wooden-desk-159618/"&gt;Pixabay&lt;/a&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;h2 id="创建博客文章"&gt;创建博客文章&lt;/h2&gt;
+&lt;p&gt;要编写新的博客文章，请在 &lt;code&gt;content/post/&lt;/code&gt; 目录中创建一个 markdown 文件。&lt;/p&gt;
+&lt;p&gt;你可以将博客文章组织到子目录中，这样更容易管理内容。&lt;/p&gt;
+&lt;p&gt;例如，如果你想将文章分组到 &lt;code&gt;2025&lt;/code&gt; 下，可以将它们放在 &lt;code&gt;content/post/2025/&lt;/code&gt; 中。Hugo 会自动生成相应的 URL。&lt;/p&gt;
+&lt;div class="highlight" filename="示例"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;# 示例：博客文章结构和 URL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/very-first-post.md -&amp;gt; mysite.com/post/very-first-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/2025/example-post.md -&amp;gt; mysite.com/post/2025/example-post
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;content/post/docs/how-to.md -&amp;gt; mysite.com/post/docs/how-to
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;💡 提示：你可以在 frontmatter 中使用 &lt;code&gt;slug&lt;/code&gt; 参数覆盖博客文章的 slug。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="front-matter"&gt;Front Matter&lt;/h2&gt;
+&lt;p&gt;Front Matter 是存储博客文章（文章）重要信息的主要位置。Front Matter 位于文章顶部，以 YAML 格式编写。在 &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo 文档&lt;/a&gt;中了解更多关于 frontmatter 及其用法的信息。&lt;/p&gt;</description></item></channel></rss>

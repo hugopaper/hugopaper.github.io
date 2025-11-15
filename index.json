@@ -1,0 +1,145 @@
+[
+    {
+      "title": "Complete SEO Optimization Guide for Hugo Paper: Rank Higher on Google",
+      "url": "https://hugopaper.github.io/post/seo-optimization-guide-hugo-paper-google-ranking/",
+      "date": "2024-11-15",
+      "description": "Master SEO optimization in Hugo Paper with Schema.org structured data, meta tags, and best practices. Complete guide to improve Google rankings and organic traffic.",
+      "tags": ["hugo","seo","google","schema-org","optimization","ranking"],
+      "categories": ["Tutorial","SEO"]
+    },
+    {
+      "title": "Dynamic OG Image Generation in Hugo Paper: Boost Social Media Engagement",
+      "url": "https://hugopaper.github.io/post/dynamic-og-images-hugo-paper-social-media/",
+      "date": "2024-11-15",
+      "description": "Learn how to automatically generate beautiful Open Graph images for your Hugo blog using Unsplash API. Increase social media engagement by 30-50% with dynamic OG images.",
+      "tags": ["hugo","seo","social-media","og-image","unsplash","automation"],
+      "categories": ["Tutorial","SEO"]
+    },
+    {
+      "title": "How to Create SEO-Optimized Blog Posts with Hugo Paper's New-Post Script",
+      "url": "https://hugopaper.github.io/post/create-seo-optimized-posts-hugo-paper-new-post-script/",
+      "date": "2024-11-15",
+      "description": "Learn how to quickly create SEO-optimized blog posts using Hugo Paper's interactive new-post script. Complete guide with examples and best practices for content creation.",
+      "tags": ["hugo","blogging","seo","automation","productivity"],
+      "categories": ["Tutorial","Documentation"]
+    },
+    {
+      "title": "Dynamic OG Image Generation in Hugo Paper",
+      "url": "https://hugopaper.github.io/post/dynamic-og-image-generation-in-hugo-paper/",
+      "date": "2024-11-15",
+      "description": "Learn how Hugo Paper automatically generates Open Graph images for blog posts using Unsplash API, enhancing social media sharing with dynamic, high-quality visuals.",
+      "tags": ["docs","tutorial"],
+      "categories": []
+    },
+    {
+      "title": "Getting Started with Hugo Paper",
+      "url": "https://hugopaper.github.io/post/getting-started/",
+      "date": "2024-11-11",
+      "description": "Learn how to set up and customize Hugo Paper theme for your blog",
+      "tags": ["hugo","setup","guide"],
+      "categories": ["Tutorial"]
+    },
+    {
+      "title": "Tailwind CSS v4 Best Practices",
+      "url": "https://hugopaper.github.io/post/tailwind-v4-best-practices/",
+      "date": "2024-11-10",
+      "description": "Discover best practices for working with Tailwind CSS v4 in Hugo Paper",
+      "tags": ["tailwind","css","tips"],
+      "categories": ["Development"]
+    },
+    {
+      "title": "How to add LaTeX Equations in Astro blog posts",
+      "url": "https://hugopaper.github.io/post/how-to-add-latex-equations-in-blog-posts/",
+      "date": "2024-09-08",
+      "description": "Learn how to add LaTeX equations in Astro blog posts using Markdown, KaTeX, and remark/rehype plugins.",
+      "tags": ["docs"],
+      "categories": []
+    },
+    {
+      "title": "How to integrate Giscus comments into AstroPaper",
+      "url": "https://hugopaper.github.io/post/how-to-integrate-giscus-comments/",
+      "date": "2024-07-25",
+      "description": "Comment function on a static blog hosted on GitHub Pages with Giscus.",
+      "tags": ["astro","blog","docs"],
+      "categories": []
+    },
+    {
+      "title": "How to use Git Hooks to set Created and Modified Dates",
+      "url": "https://hugopaper.github.io/post/setting-dates-via-git-hooks/",
+      "date": "2024-01-03",
+      "description": "How to use Git Hooks to set your Created and Modified Dates on AstroPaper",
+      "tags": ["docs","FAQ"],
+      "categories": []
+    },
+    {
+      "title": "How to update dependencies of AstroPaper",
+      "url": "https://hugopaper.github.io/post/how-to-update-dependencies/",
+      "date": "2023-07-20",
+      "description": "How to update project dependencies and AstroPaper template.",
+      "tags": ["FAQ"],
+      "categories": []
+    },
+    {
+      "title": "Predefined color schemes",
+      "url": "https://hugopaper.github.io/post/predefined-color-schemes/",
+      "date": "2022-09-26",
+      "description": "Some of the well-crafted, predefined color schemes for AstroPaper blog theme.",
+      "tags": ["color-schemes"],
+      "categories": []
+    },
+    {
+      "title": "Customizing AstroPaper theme color schemes",
+      "url": "https://hugopaper.github.io/post/customizing-astropaper-theme-color-schemes/",
+      "date": "2022-09-25",
+      "description": "How you can enable/disable light \u0026 dark mode; and customize color schemes of AstroPaper theme.",
+      "tags": ["color-schemes","docs"],
+      "categories": []
+    },
+    {
+      "title": "Adding new posts in AstroPaper theme",
+      "url": "https://hugopaper.github.io/post/adding-new-posts-in-astropaper-theme/",
+      "date": "2022-09-23",
+      "description": "Some rules \u0026 recommendations for creating or adding new posts using AstroPaper theme.",
+      "tags": ["docs"],
+      "categories": []
+    },
+    {
+      "title": "Adding new posts in HugoPaper theme",
+      "url": "https://hugopaper.github.io/post/adding-new-posts-in-hugopaper-theme/",
+      "date": "2022-09-23",
+      "description": "Some rules \u0026 recommendations for creating or adding new posts using HugoPaper theme.",
+      "tags": ["docs"],
+      "categories": ["Tutorial"]
+    },
+    {
+      "title": "How to configure AstroPaper theme",
+      "url": "https://hugopaper.github.io/post/how-to-configure-astropaper-theme/",
+      "date": "2022-09-23",
+      "description": "How you can make AstroPaper theme absolutely yours.",
+      "tags": ["configuration","docs"],
+      "categories": []
+    },
+    {
+      "title": "Tailwind Typography Plugin",
+      "url": "https://hugopaper.github.io/post/examples/tailwind-typography/",
+      "date": "2022-07-05",
+      "description": "EXAMPLE POST: About Tailwind Typography Plugin and how you can use it effectively.",
+      "tags": ["TypeScript","Astro"],
+      "categories": []
+    },
+    {
+      "title": "How Do I Develop My Terminal Portfolio Website with React",
+      "url": "https://hugopaper.github.io/post/examples/how-do-i-develop-my-terminal-portfolio-website-with-react/",
+      "date": "2022-06-09",
+      "description": "EXAMPLE POST: Developing a terminal-like website using ReactJS, TypeScript and Styled-Components. Includes features like autocomplete, multiple themes, command hints etc.",
+      "tags": ["JavaScript","ReactJS","ContextAPI","Styled-Components","TypeScript"],
+      "categories": []
+    },
+    {
+      "title": "How Do I Develop My Portfolio Website \u0026 Blog",
+      "url": "https://hugopaper.github.io/post/examples/how-do-i-develop-my-portfolio-and-blog/",
+      "date": "2022-03-25",
+      "description": "EXAMPLE POST: My experience about developing my first portfolio website and a blog using NextJS and a headless CMS.",
+      "tags": ["NextJS","TailwindCSS","HeadlessCMS","Blog"],
+      "categories": []
+    }]
