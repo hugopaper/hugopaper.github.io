@@ -259,7 +259,7 @@ alt="经典木质书桌与书写材料、复古时钟和皮包"
 &lt;p&gt;💡 提示：你可以在 frontmatter 中使用 &lt;code&gt;slug&lt;/code&gt; 参数覆盖博客文章的 slug。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="front-matter"&gt;Front Matter&lt;/h2&gt;
-&lt;p&gt;Front Matter 是存储博客文章（文章）重要信息的主要位置。Front Matter 位于文章顶部，以 YAML 格式编写。在 &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo 文档&lt;/a&gt;中了解更多关于 frontmatter 及其用法的信息。&lt;/p&gt;</description></item><item><title>关于</title><link>https://hugopaper.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author/><guid>https://hugopaper.github.io/zh/about/</guid><description>&lt;p&gt;HugoPaper 是一个极简、易访问且 SEO 友好的博客主题，使用 &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 和 &lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt; 构建。&lt;/p&gt;
+&lt;p&gt;Front Matter 是存储博客文章（文章）重要信息的主要位置。Front Matter 位于文章顶部，以 YAML 格式编写。在 &lt;a href="https://gohugo.io/content-management/front-matter/"&gt;Hugo 文档&lt;/a&gt;中了解更多关于 frontmatter 及其用法的信息。&lt;/p&gt;</description></item><item><title>服务条款</title><link>https://hugopaper.github.io/zh/terms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author/><guid>https://hugopaper.github.io/zh/terms/</guid><description>&lt;p&gt;内容仅供教育目的，代码示例采用 MIT 许可。&lt;/p&gt;</description></item><item><title>关于</title><link>https://hugopaper.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author/><guid>https://hugopaper.github.io/zh/about/</guid><description>&lt;p&gt;HugoPaper 是一个极简、易访问且 SEO 友好的博客主题，使用 &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; 和 &lt;a href="https://tailwindcss.com/"&gt;Tailwind CSS&lt;/a&gt; 构建。&lt;/p&gt;
 &lt;p&gt;HugoPaper 为博客甚至作品集提供了坚实的基础_完整支持 Markdown、内置深色模式，以及开箱即用的简洁布局。&lt;/p&gt;
 &lt;p&gt;此主题中的博客文章也可作为指南、文档或示例文章_使 HugoPaper 成为你下一个内容驱动网站的灵活起点。&lt;/p&gt;
 &lt;h2 id="特性"&gt;特性&lt;/h2&gt;
@@ -276,4 +276,7 @@ alt="经典木质书桌与书写材料、复古时钟和皮包"
 &lt;/ul&gt;
 &lt;p&gt;还有更多功能。&lt;/p&gt;
 &lt;h2 id="支持我们"&gt;支持我们&lt;/h2&gt;
-&lt;p&gt;如果你喜欢 &lt;a href="https://github.com/ouraihub-hugo-themes/hugo-theme-paper"&gt;HugoPaper&lt;/a&gt;，请考虑给它一个星标 ⭐️。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;如果你喜欢 &lt;a href="https://github.com/ouraihub-hugo-themes/hugo-theme-paper"&gt;HugoPaper&lt;/a&gt;，请考虑给它一个星标 ⭐️。&lt;/p&gt;</description></item><item><title>联系我们</title><link>https://hugopaper.github.io/zh/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author/><guid>https://hugopaper.github.io/zh/contact/</guid><description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt; — &lt;a href="https://github.com/ouraihub"&gt;@ouraihub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;邮箱&lt;/strong&gt; — &lt;a href="mailto:contact@ouraihub.com"&gt;contact@ouraihub.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>隐私政策</title><link>https://hugopaper.github.io/zh/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author/><guid>https://hugopaper.github.io/zh/privacy/</guid><description>&lt;p&gt;本站仅使用 localStorage 保存主题偏好，不使用追踪 Cookie。&lt;/p&gt;</description></item></channel></rss>
